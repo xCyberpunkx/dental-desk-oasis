@@ -1,5 +1,5 @@
 
-import { Stethoscope, Sparkles, Clock, Heart, Smile, HeartPulse } from "lucide-react";
+import { Stethoscope, Sparkles, Wrench, HeartPulse, Clock } from "lucide-react";
 import { ServiceCard } from "./ui/card-service";
 
 const services = [
@@ -14,30 +14,25 @@ const services = [
     icon: Sparkles,
   },
   {
+    title: "Dental Implants",
+    description: "Permanent, natural-looking tooth replacements to restore your smile.",
+    icon: Wrench,
+  },
+  {
     title: "Emergency Care",
     description: "24/7 emergency dental services when you need immediate attention.",
     icon: Clock,
   },
   {
-    title: "Family Dentistry",
-    description: "Comprehensive dental care for your entire family, from children to adults.",
-    icon: Heart,
-  },
-  {
-    title: "Cosmetic Dentistry",
-    description: "Transform your smile with veneers, bonding, and other cosmetic procedures.",
-    icon: Smile,
-  },
-  {
-    title: "Preventive Care",
-    description: "Regular cleanings and preventive treatments to keep your smile healthy.",
+    title: "Orthodontics",
+    description: "Traditional braces and clear aligners for straighter teeth and better bite alignment.",
     icon: HeartPulse,
   },
 ];
 
 export function ServicesSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-dental-50">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-dental-50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
