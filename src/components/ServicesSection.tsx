@@ -1,12 +1,12 @@
 
-import { Tooth, Sparkles, Clock, Stethoscope, Smile, HeartPulse } from "lucide-react";
+import { Stethoscope, Sparkles, Clock, Heart, Smile, HeartPulse } from "lucide-react";
 import { ServiceCard } from "./ui/card-service";
 
 const services = [
   {
     title: "General Checkups",
     description: "Comprehensive dental examinations and preventive care to maintain your oral health.",
-    icon: Tooth,
+    icon: Stethoscope,
   },
   {
     title: "Teeth Whitening",
@@ -19,9 +19,9 @@ const services = [
     icon: Clock,
   },
   {
-    title: "Orthodontics",
-    description: "Traditional braces and clear aligners for straighter teeth and better bite alignment.",
-    icon: Stethoscope,
+    title: "Family Dentistry",
+    description: "Comprehensive dental care for your entire family, from children to adults.",
+    icon: Heart,
   },
   {
     title: "Cosmetic Dentistry",
