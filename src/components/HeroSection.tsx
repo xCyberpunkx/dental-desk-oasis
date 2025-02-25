@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center py-12 md:py-24 lg:py-32 xl:py-48 bg-white bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="w-full min-h-screen flex items-center justify-center py-12 md:py-24 lg:py-32 xl:py-48 bg-white bg-[url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
       <div className="container px-4 md:px-6 relative">
         <div className="flex flex-col items-center space-y-4 text-center">
