@@ -8,12 +8,13 @@ interface ServiceCardProps {
   description: string;
   icon: LucideIcon;
   className?: string;
+  children?: React.ReactNode;
 }
 
-export function ServiceCard({ title, description, icon: Icon, className }: ServiceCardProps) {
+export function ServiceCard({ title, description, icon: Icon, className, children }: ServiceCardProps) {
   return (
     <Card className={cn(
-      "group relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1",
+      "group relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 h-full",
       "border border-gray-200 bg-white/50 backdrop-blur-sm",
       className
     )}>
@@ -24,8 +25,9 @@ export function ServiceCard({ title, description, icon: Icon, className }: Servi
         </div>
         <CardTitle className="text-xl font-semibold text-gray-900">{title}</CardTitle>
       </CardHeader>
-      <CardContent className="relative">
+      <CardContent className="relative space-y-2">
         <CardDescription className="text-gray-600">{description}</CardDescription>
+        {children}
       </CardContent>
     </Card>
   );
