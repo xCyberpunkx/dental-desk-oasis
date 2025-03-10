@@ -18,15 +18,15 @@ export function ServiceCard({ title, description, icon: Icon, className, childre
       "border border-gray-200 bg-white/50 backdrop-blur-sm",
       className
     )}>
-      <div className="absolute inset-0 bg-gradient-to-br from-dental-50/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-br from-dental-100/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <CardHeader className="relative">
-        <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-dental-100/50 text-dental-700">
+        <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-dental-100/50 text-dental-600">
           <Icon className="h-6 w-6" />
         </div>
-        <CardTitle className="text-xl font-semibold text-gray-900">{title}</CardTitle>
+        <CardTitle className="text-xl font-semibold text-purple-900">{title}</CardTitle>
       </CardHeader>
       <CardContent className="relative space-y-2">
-        <CardDescription className="text-gray-600">{description}</CardDescription>
+        <CardDescription className="text-gray-700">{description}</CardDescription>
         {children}
       </CardContent>
     </Card>

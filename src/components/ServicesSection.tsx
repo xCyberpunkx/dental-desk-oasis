@@ -90,8 +90,8 @@ export function ServicesSection() {
       <div className="container px-4 md:px-6 relative">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-purple-900">Our Services</h2>
+            <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Comprehensive dental care tailored to your needs
             </p>
           </div>
@@ -107,8 +107,8 @@ export function ServicesSection() {
             >
               <ul className="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {category.services.map((service, index) => (
-                  <li key={index} className="text-sm text-gray-600 flex items-start">
-                    <span className="text-dental-600 mr-2">•</span>
+                  <li key={index} className="text-sm text-gray-700 flex items-start">
+                    <span className="text-dental-500 mr-2">•</span>
                     {service}
                   </li>
                 ))}
@@ -123,24 +123,25 @@ export function ServicesSection() {
               alt="Modern dental equipment" 
               className="absolute inset-0 w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/40 to-transparent"></div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">State-of-the-Art Facilities</h3>
+            <h3 className="text-2xl font-bold text-purple-900">State-of-the-Art Facilities</h3>
             <p className="text-gray-600">
               Our clinic is equipped with the latest dental technology to provide you with the highest quality care. 
               From digital X-rays to advanced sterilization systems, we ensure your safety and comfort throughout your visit.
             </p>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <HeartPulse className="h-5 w-5 text-dental-600 mr-2" />
+                <HeartPulse className="h-5 w-5 text-dental-500 mr-2" />
                 Advanced Diagnostic Equipment
               </li>
               <li className="flex items-center">
-                <HeartPulse className="h-5 w-5 text-dental-600 mr-2" />
+                <HeartPulse className="h-5 w-5 text-dental-500 mr-2" />
                 Comfortable Treatment Rooms
               </li>
               <li className="flex items-center">
-                <HeartPulse className="h-5 w-5 text-dental-600 mr-2" />
+                <HeartPulse className="h-5 w-5 text-dental-500 mr-2" />
                 Modern Sterilization Systems
               </li>
             </ul>

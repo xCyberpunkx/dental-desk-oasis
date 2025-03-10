@@ -1,45 +1,46 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-dental-50 to-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-purple-900">Contact Us</h2>
+            <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We're here to help. Get in touch with us.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
-          <Card className="bg-white/50 backdrop-blur-sm">
+          <Card className="bg-white/50 backdrop-blur-sm border-dental-200">
             <CardContent className="flex flex-col items-center p-6 text-center">
-              <Phone className="h-12 w-12 text-dental-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Phone</h3>
-              <p className="text-gray-500">+1 (555) 123-4567</p>
+              <Phone className="h-12 w-12 text-dental-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-purple-900">Phone</h3>
+              <p className="text-gray-600">+1 (555) 123-4567</p>
             </CardContent>
           </Card>
-          <Card className="bg-white/50 backdrop-blur-sm">
+          <Card className="bg-white/50 backdrop-blur-sm border-dental-200">
             <CardContent className="flex flex-col items-center p-6 text-center">
-              <Mail className="h-12 w-12 text-dental-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-gray-500">contact@dentalclinic.com</p>
+              <Mail className="h-12 w-12 text-dental-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-purple-900">Email</h3>
+              <p className="text-gray-600">contact@ramdanidental.com</p>
             </CardContent>
           </Card>
-          <Card className="bg-white/50 backdrop-blur-sm md:col-span-2 lg:col-span-1">
+          <Card className="bg-white/50 backdrop-blur-sm border-dental-200 md:col-span-2 lg:col-span-1">
             <CardContent className="flex flex-col items-center p-6 text-center">
-              <Clock className="h-12 w-12 text-dental-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Hours</h3>
-              <p className="text-gray-500">Mon-Fri: 9am-6pm</p>
-              <p className="text-gray-500">Sat: 9am-2pm</p>
+              <Clock className="h-12 w-12 text-dental-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-purple-900">Hours</h3>
+              <p className="text-gray-600">Mon-Fri: 9am-6pm</p>
+              <p className="text-gray-600">Sat: 9am-2pm</p>
             </CardContent>
           </Card>
         </div>
         <div className="mt-12">
-          <Card className="bg-white/50 backdrop-blur-sm overflow-hidden">
+          <Card className="bg-white/50 backdrop-blur-sm border-dental-200 overflow-hidden">
             <CardContent className="p-0">
               <div className="aspect-[2/1] w-full">
                 <iframe

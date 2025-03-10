@@ -21,8 +21,13 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-dental-600">
-              Remdani Dental
+            <a href="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/f48b8964-576f-43d6-b6b5-26309febba51.png" 
+                alt="Ramdani Dental Center" 
+                className="h-10 mr-2" 
+              />
+              <span className="text-2xl font-bold text-purple-900">Ramdani Dental</span>
             </a>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
@@ -35,8 +40,8 @@ export function Navigation() {
             <a href="#contact" className="text-sm font-medium hover:text-dental-600 transition-colors">
               Contact
             </a>
-            <Button variant="outline" className="mr-2">Login</Button>
-            <Button className="bg-dental-600 hover:bg-dental-700">Sign Up</Button>
+            <Button variant="outline" className="mr-2 border-purple-800 text-purple-800 hover:bg-purple-50">Login</Button>
+            <Button className="bg-dental-500 hover:bg-dental-600 text-purple-900 font-semibold">Sign Up</Button>
           </nav>
         </div>
       </div>
